@@ -12,6 +12,7 @@ def main():
     max_pics = 10
 
     try:
+        #test comment 1
         while True:
             ret, frame = cap.read()
 

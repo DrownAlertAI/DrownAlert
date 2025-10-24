@@ -1,5 +1,12 @@
 import cv2
-import ultralytics
+
+from ultralytics import YOLO
+
+model = YOLO("yolov8n.pt")
+
+results = model("https://ultralytics.com/images/pool.jpg")
+
+results.show()
 
 def main():
     # open webcam (0 = default camera)

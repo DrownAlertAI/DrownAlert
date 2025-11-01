@@ -4,9 +4,9 @@ from ultralytics import YOLO
 
 model = YOLO("yolov8n.pt")
 
-results = model("https://ultralytics.com/images/pool.jpg")
+results = model("https://ultralytics.com/images/bus.jpg")
 
-results.show()
+results[0].show()
 
 def main():
     # open webcam (0 = default camera)
